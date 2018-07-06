@@ -22,14 +22,20 @@ app.secret_key = 'super secret key'
 @app.route("/")
 def index():
     if not session.get('logged_in'):
-        return render_template('email.html')
+        return render_template('index.html')
     else:
         return render_template('login.html')
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
+    form = LoginForm()
 
-    if request.method == 'POST':
+    if form.validate_on_submit():
+        return 'Form Successfully Submitted!'
+
+    return render_template('index.html', form=form)
+
+    '''if request.method == 'POST':
 
         POST_USERNAME = str(request.form['username'])
         POST_PASSWORD = str(request.form['password'])
@@ -51,7 +57,7 @@ def login():
         else:
             return render_template('errorlogin.html', username)
     else:
-        return render_template('index.html')
+        return render_template('index.html')'''
 
 @app.route('/logout')
 def logout():
