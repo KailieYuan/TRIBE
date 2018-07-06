@@ -4,7 +4,7 @@ var app = app || {};
 
 app.main = (function() {
 	console.log('JS connected');
-
+	
 	attachEvents();
 
 
@@ -52,7 +52,7 @@ app.main = (function() {
 				.addClass("btn-primary")
 				.text("Ok")
 				.removeAttr("data-dismiss");
-
+                
 	});
 
 
@@ -62,15 +62,15 @@ app.main = (function() {
 
 			var filterAppear = $('.filter-container div');
 
-			filterAppear.addClass("seefilter");
-			 console.log ('filter applied!!!');
-
-
+			filterAppear.addClass("seefilter");	
+			 console.log ('filter applied!!!'); 
+			 
+			
 	 });
 
 
 
-
+    
     $(window).scroll(function(){
 			var scrollPos = $(window).scrollTop();
 
@@ -87,15 +87,15 @@ app.main = (function() {
 			function stickyMenu(navigation){
 				if(scrollPos>= navOffset){
 						navigation.addClass("fixed");
-
+						
 					}
-
+				
 				else{
 					navigation.removeClass("fixed");
 
 				}
 
-			}
+			}	
 
 
 
@@ -105,7 +105,7 @@ app.main = (function() {
 
 		var filter = $(".filtermenu") ;
 
-		var newsOff = $("#news").offset().top-50;
+		var newsOff = $("#news").offset().top-80;
 		var runwayOff = $("#runway").offset().top-50;
 		var spinoutsOff = $("#spinouts").offset().top-50;
 
@@ -128,7 +128,7 @@ app.main = (function() {
 				filter.addClass('nodisappear');
 
 	//			$(".t2").addClass('appear');
-
+				
 			}else{
 				links[1].removeClass('purple');
 
@@ -142,21 +142,21 @@ app.main = (function() {
 				filter.addClass('nodisappear');
 
 	//			$(".t3").addClass('appear');
-
+				
 			}else{
 				links[2].removeClass('purple');
 
 				//$(".t3").removeClass('appear');
 			}
 
-
+	
 		});
 
 
 
 	var init = function(){
 		console.log('Initializing app.');
-
+		
 	};
 
 
@@ -167,10 +167,10 @@ app.main = (function() {
 
 	     	var myTarget = $(this.hash);
 	     	myTarget = myTarget.length && myTarget
-
+	      			
 	        var targetOffset = myTarget.offset().top;
 	       	$('html,body').animate({scrollTop: targetOffset}, 1000);
-
+	
 	     });
 
   	}
@@ -210,12 +210,12 @@ window.addEventListener('DOMContentLoaded', app.main.init);
 
 	     	var myTarget = $(this.hash);
 	     	myTarget = myTarget.length && myTarget
-
+	      			
 	        var targetOffset = myTarget.offset().top;
 	       	$('html,body').animate({scrollTop: targetOffset}, 1000);
 
 	       	closeNav();
-
+	
 	     });
 
   	}
@@ -227,26 +227,26 @@ window.addEventListener('DOMContentLoaded', app.main.init);
 
 	function openNav(){
 		mySideNav.style.width="100vw";
-
-
+		
+		
 
 	}
 
 	function closeNav(){
 		mySideNav.style.width="0";
-
+		
 
 	}
 
 	document.addEventListener('DOMContentLoaded', function(){
 
-	function addLinks(parent){
-		parent.innerHTML += "<a href = '#news'>NEWS</a>";
+	function addLinks(parent){ 
+		parent.innerHTML += "<a href = '#news'>NEWS</a>"; 
 		parent.innerHTML += "<a href = '#runway'>RUNWAY</a>";
 		parent.innerHTML += "<a href = '#spinouts'>SPINOUTS</a>";
+				
 
-
-
+		
 	}
 
 		var sideNav = document.getElementById("mySideNav");

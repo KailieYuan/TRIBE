@@ -1,10 +1,11 @@
-@import 'https://fonts.googleapis.com/css?family=Work+Sans:300,400,700';
 
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:300,400,700';
+	
 	body{
 		font-size: 16px;
 		font-family: 'Work Sans', sans-serif;
 		top: 0;
-	}
+	}	
 
 /*nav*/
 /*Hamberguer menu _ This is only visible on small displays*/
@@ -13,24 +14,24 @@
 		z-index: 90;
 		display: none;
 	}
-
+	
 	.hamberguer{
 		top: 5px;
 		left: 30px;
-		position: absolute;
+		position: absolute;		
 	}
 /*
 Side Navegarion */
 	#mySideNav{
 	width: 0;
 	height: 100%;
-	z-index: 100;
+	z-index: 100;	
 	background-color: black;
 	opacity: 0.9;
 	display: block;
 	position: fixed;
 	text-align: center;
-	transition: width 1s;
+	transition: width 1s; 
 	overflow-x: hidden;
 
 	}
@@ -84,7 +85,7 @@ Side Navegarion */
 
 /*Header Landing Page*/
 	.logo-landing{
-		width: 20%;
+		width: 20%; 
 		margin-top: 30px;
 	}
 
@@ -117,26 +118,27 @@ Side Navegarion */
 	}
 
 	.contact-us{
-		background-color:transparent;
+		background-color:transparent; 
 		border-color: #56467a;
-		color: #56467a;
-		margin: 10px;
+		color: #56467a;  
+		margin: 10px; 
 		z-index: 30;
 	}
 
 
 	.introtext{
-		font-size: calc(0.6rem + 1vw);
-		width: 40%;
-		text-align:
-		center; margin-left: 30%;
-		color: dimgray;
+		font-size: calc(0.6rem + 1vw); 
+		width: 40%; 
+		text-align: 
+		center; margin-left: 30%; 
+		color: dimgray; 
 		margin-top: 30px;
 	}
 
 
 /* news page */
 	.news{
+
 		width: 100%;
 		height: auto;
 		margin-left: 0vw;
@@ -151,7 +153,7 @@ Side Navegarion */
 		height: 700px;
 		margin-left: 0vw;
 		z-index: 1;
-		background-color: orange;
+		background-color: black;
 		position: relative;
 		text-align: center;
 	}
@@ -171,7 +173,7 @@ Side Navegarion */
 
 /* First Menu Bat */
 	.menubar{
-
+	
 		width: 100%
 		height: 50px;
 		margin-left: 0;
@@ -179,7 +181,7 @@ Side Navegarion */
 		z-index: 10;
 		opacity: 0;
 
-
+		
 	}
 
 	.fixed{
@@ -208,7 +210,7 @@ Side Navegarion */
 		width: 100%;
 		height: 50px;
 		margin-top: -50px;
-		z-index: 20;
+		z-index: 20; 
 
 	}
 
@@ -264,7 +266,7 @@ Side Navegarion */
 
 	.searchButton {
 	  position: absolute;
-	  right: 0;
+	  right: 0;  
 	  width: 35px;
 	  height: 35px;
 	  border: 1px solid #56467A;
@@ -281,7 +283,7 @@ Side Navegarion */
 
 	.wrap{
 	  position: absolute;
-	  margin-top: 7.5px;
+	  margin-top: 7.5px;	
 	  width: 400px;
 	  margin-left: 20px;
 	}
@@ -302,7 +304,7 @@ Side Navegarion */
 	}
 
 /*Inside the second menu, this is the FILTER*/
-
+	
 	.filter-container{
 		text-align: center;
 		position: absolute;
@@ -324,11 +326,11 @@ Side Navegarion */
 		color: dimgray;
 
 	}
-
+	
 	.allboxes{
 	    opacity: 0;
 	    position: absolute;
-
+	     
 	}
 
 	.allboxes, .alllables{
@@ -362,7 +364,7 @@ Side Navegarion */
 	}
 
 	.checkbox-custom1:checked + .checkbox-custom-label1:before {
-	    background: #56467A;
+	    background: #56467A;	
 	}
 
 	.checkbox-custom2 + .checkbox-custom-label2:before{
@@ -395,7 +397,7 @@ Side Navegarion */
 
 
 	.filterButton {
-	  right: 0;
+	  right: 0;  
 	  width: 35px;
 	  height: 35px;
 	  border: 1px solid #56467A;
@@ -423,7 +425,7 @@ Side Navegarion */
 		z-index: 30;
 		transition: 0.5s;
 		background-color: #604B9F;
-
+		
 	}
 
 
@@ -458,7 +460,7 @@ Side Navegarion */
 
 .carousel-multi-item-2 .card img {
     border-radius: 2px; }
-
+	
 
 
 /*Medium Screens*/
@@ -476,7 +478,7 @@ Side Navegarion */
 		/*background-color: rgba(255,255,255,0.5);*/
 		margin-right: 0;
 		z-index: 200;
-	}
+	}	
 
 
 
@@ -492,15 +494,15 @@ Side Navegarion */
 
 
 
+	
 
-
-}
+}	
 
 
 /*Small Screens*/
 @media (max-width: 750px) {
 
-/*Show hamburguer menus in small displays and hide menu bar*/
+/*Show hamburguer menus in small displays and hide menu bar*/	
 	.ham-container{
 		display: inline-flex;
 	}
@@ -511,3 +513,4 @@ Side Navegarion */
 
 
 }
+
