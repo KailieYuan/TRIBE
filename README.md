@@ -8,5 +8,5 @@ This business management system is a full stack web application that will be dev
 
 ## Running TRIBE
 To run tribe, you must first download the zipped folder. <br />
-Then, in terminal, install all the packages we are useing with: sudo pip install -r requirements.txt<br />
-Last, run the current application with: python server.py<br />
+Then, in terminal, install all the packages we are useing with: <br />sudo pip install -r requirements.txt<br /><br />
+Last, run the current application with: <br />python server.py<br /><br />
