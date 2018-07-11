@@ -28,14 +28,14 @@ def index():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    form = LoginForm()
+    '''form = LoginForm()
 
     if form.validate_on_submit():
         return 'Form Successfully Submitted!'
 
     return render_template('index.html', form=form)
 
-    '''if request.method == 'POST':
+    if request.method == 'POST':
 
         POST_USERNAME = str(request.form['username'])
         POST_PASSWORD = str(request.form['password'])
