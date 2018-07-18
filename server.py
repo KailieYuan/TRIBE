@@ -1,46 +1,44 @@
+from flask import Flask, render_template, redirect, request, flash
+from wtforms import StringField, PasswordField, BooleanField
+from flask_wtf import FlaskForm
+from wtforms.validators import InputRequired, Email, Length
+from flask_bootstrap import Bootstrap
 
-import os
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'Thisissupposedtobesecret!'
+bootstrap = Bootstrap(app)
 
-#from jinja2 import StrictUndefined
 
-from flask import Flask, render_template, redirect, request, flash, session, jsonify
-#from flask_debugtoolbar import DebugToolbarExtension
+class LoginForm(FlaskForm):
+    email = StringField('email', validators=[InputRequired(), Length(min=4, max=15)])
+    password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
+    remember = BooleanField('remember me')
 
-#from model import User
-#from model import connect_to_db, db
-
-app = Flask(__name__, static_folder='assets')
-app.config['SECRET_KEY'] = os.environ.get("FLASK_SECRET_KEY", "abcdef")
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    form = LoginForm()
+    return render_template('index.html', form=form)
 
-@app.route("/login", methods=["GET"])
-def login():
-    """Show login form."""
-    return render_template("index.html")
 
-'''
-@app.route("/login", methods=["POST"])
+@app.route("/login", methods=["GET", "POST"])
 def login():
     """Log user in if credentials provided are correct."""
 
-    username= request.form.get("username")
-    password = request.form.get("password")
+    form = LoginForm()
 
-    try:
-        current_user = db.session.query(User).filter(User.user_name== username,
-                                                     User.user_password == password)
-    except NoResultFound:
-        flash("The email or password you have entered did not match our records. Please try again.", "danger")
-        return redirect("/login")
+    # this is if its POST
+    if form.validate_on_submit():
+        email = form.email.data
+        password = form.password.data
 
-    flash("Welcome {}. You have successfully logged in.".format(User.user_name), "success")
+        if email == "kay@gmail.com" and password == "admin":
+            return render_template("profile.html")
 
-#return redirect("/users/{}".format(current_user.user_id))
-    return render_template("profile.html")
-    '''
+        return render_template("errorlogin.html")
+    # this is if its GET
+    return render_template("index.html", form=form)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
