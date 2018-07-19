@@ -3,17 +3,17 @@ CREATE TABLE USER(
     user_name VARCHAR(20) NOT NULL,
     user_email VARCHAR(20) NOT NULL,
     user_type VARCHAR(20) NOT NULL,
-    user_origin VARCHAR(20),
     PRIMARY KEY(user_id)
 );
 
-CREATE TABLE FOUNDERS(
+CREATE TABLE FOUNDER(
     user_id INT,
     founder_id INT AUTO_INCREMENT,
     business_id INT,
     founder_phonenumber VARCHAR(20) NOT NULL,
     founder_address VARCHAR(50) NOT NULL,
     founder_bio VARCHAR(100),
+    founder_origin VARCHAR(20),
     PRIMARY KEY(business_id),
     FOREIGN KEY(user_id) REFERENCES USER(user_id)
 );
