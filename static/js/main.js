@@ -1,18 +1,36 @@
 /* Your code starts here */
 
-var app = app || {};
-
-app.main = (function() {
+document.addEventListener('DOMContentLoaded', function(e){
 	console.log('JS connected');
-	
+
+	e.preventDefault();
+	scrollEvent();
 	attachEvents();
 
 
+	function addLinks(parent){ 
+		parent.innerHTML += "<a href = '#news'>NEWS</a>"; 
+		parent.innerHTML += "<a href = '#runway'>RUNWAY</a>";
+		parent.innerHTML += "<a href = '#spinouts'>SPINOUTS</a>";
+	}
 
-	var navOffset = $('#news').offset().top - 50;
+		var sideNav = document.getElementById("mySideNav");
+		addLinks(sideNav);
+
+		scrollEvent();
 
 
-    $('.modal-footer button').click(function(){
+
+
+
+
+	});
+
+
+	var navOffset = $('#news').offset().top - 150;
+
+
+	$('.modal-footer button').click(function(){
 		var button = $(this);
 
 		if ( button.attr("data-dismiss") != "modal" ){
@@ -74,7 +92,6 @@ app.main = (function() {
     $(window).scroll(function(){
 			var scrollPos = $(window).scrollTop();
 
-			console.log(scrollPos);
 
 
 			var stickNav = $(".menubar nav");
@@ -106,8 +123,8 @@ app.main = (function() {
 		var filter = $(".filtermenu") ;
 
 		var newsOff = $("#news").offset().top-80;
-		var runwayOff = $("#runway").offset().top-50;
-		var spinoutsOff = $("#spinouts").offset().top-50;
+		var runwayOff = $("#runway").offset().top-80;
+		var spinoutsOff = $("#spinouts").offset().top-80;
 
 		//News Section
 			if(scrollPos >= newsOff){
@@ -154,12 +171,6 @@ app.main = (function() {
 
 
 
-	var init = function(){
-		console.log('Initializing app.');
-		
-	};
-
-
 	function attachEvents(){
 
   		$('nav a').click(function(e) {
@@ -176,32 +187,16 @@ app.main = (function() {
   	}
 
 
-	return {
-		init: init
-	};
 
-})();
 
-window.addEventListener('DOMContentLoaded', app.main.init);
 
 
 // NAVIGATION WITH HAMBERGUER MENU
 
 	window.addEventListener('DOMContentLoaded', function(e){
-	 	e.preventDefault();
-	 	scrollEvent();
-
-
-
-		$(window).scroll(function(){
-			var scrollPos = $(window).scrollTop();
-
-			console.log(scrollPos);
-
-	 });
+	 	
 	});
 
-// nodisplay
 
   	function scrollEvent(){
 
@@ -226,31 +221,37 @@ window.addEventListener('DOMContentLoaded', app.main.init);
 
 
 	function openNav(){
-		mySideNav.style.width="100vw";
-		
-		
+		mySideNav.style.width="100vw";	
 
 	}
 
 	function closeNav(){
 		mySideNav.style.width="0";
-		
-
 	}
 
-	document.addEventListener('DOMContentLoaded', function(){
 
-	function addLinks(parent){ 
-		parent.innerHTML += "<a href = '#news'>NEWS</a>"; 
-		parent.innerHTML += "<a href = '#runway'>RUNWAY</a>";
-		parent.innerHTML += "<a href = '#spinouts'>SPINOUTS</a>";
-				
 
-		
-	}
 
-		var sideNav = document.getElementById("mySideNav");
-		addLinks(sideNav);
-	});
+// /*------------------------------------------------*/
+// 	//	Load the JSON
+// /*------------------------------------------------*/
+	
+// 	function loadData() {
+// 		$.getJSON( "../spinouts.json", function( data ) {
+// 			// Write the data into our global variable.
+// 			spinouts = data;
+// 			console.log('JSON connected');
+
+// 			// Call a function to create HTML for all the students.
+// 			// generateAllStudentsHTML(spinouts);
+
+// 			// Manually trigger a hashchange to start the app.
+// 			// $(window).trigger('hashchange');
+// 		});
+// 	}
+
+
+
+
 
 

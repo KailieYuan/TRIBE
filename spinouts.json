@@ -1,0 +1,71 @@
+[
+    {
+        "companyname": "Full Plate",
+        "logourl": "https://i.imgur.com/QCapY5j.png",
+        "shortdescription": "Full Plate improves health outcomes of low-income families by creating access to nutritious, affordable, and ready-to-eat meals.",
+        "primarycontactemail": "ryan@fullplate.nyc",
+        "websiteurl": "www.fullplate.nyc"
+    },
+    {
+        "companyname": "Crater",
+        "logourl": "https://drive.google.com/open?id=1JE097ih40WboKXQTBjbtF6rSp5apEVNp",
+        "shortdescription": "Crater is redefining local media and storytelling for a new generation of creators. Armed with creative AI video-editing tools and guided storytelling templates, we give creators the courage to surface and share stories about their locality with their own self-produced segments. Through a quality, narrative-driven mobile video format, Crater stories converge on news and culture, covering what's most important to the unique identities of our home communities.",
+        "primarycontactemail": "arpit@crater.land",
+        "websiteurl": "www.crater.land"
+    },
+    {
+        "companyname": "Kipit",
+        "logourl": "https://drive.google.com/file/d/1AwXa-vUBIbyCeCXJu07fDlE1qm7PiNek/view?usp=sharing",
+        "shortdescription": "Kipit is building a solution for busy people to keep track of their important items by sending them reminders when they are about to leave anything behind.",
+        "primarycontactemail": "eliza@kipit.tech",
+        "websiteurl": "www.kipit.tech"
+    },
+    {
+        "companyname": "LitOS"
+    },
+    {
+        "companyname": "Airbud",
+        "logourl": "https://drive.google.com/file/d/1VKNjqwrp0NNMaOLoqjeXgcmhaxiDhWSp/view?usp=sharing",
+        "shortdescription": "Airbud is a voice platform that allows enterprises to easily add voice capabilities to their websites and mobile apps. We use natural language understanding to let people have two-way conversations that simplify their access to relevant information. Starting with healthcare, we enable organizations to better engage with their existing customers and reduce the cost of customer support.",
+        "primarycontactemail": "israel@airbud.io",
+        "websiteurl": "www.airbud.io"
+    },
+    {
+        "companyname": "Revercare",
+        "logourl": "https://drive.google.com/file/d/1bTF2sTcnIEEG4nO_9EclXGnUxHrjSlAu/view?usp=sharing",
+        "shortdescription": "ReverCare connects people caring for elderly family members to care coaches who help them craft a personalized, long-term care plan",
+        "primarycontactemail": "kiyan@revercare.com",
+        "websiteurl": "www.revercare.com"
+    },
+    {
+        "companyname": "TogethAR",
+        "logourl": "https://drive.google.com/file/d/1ez-HtulOR-nnv8qk1lsGE385LGqfd4Rr/view?usp=sharing",
+        "shortdescription": "TogethAR is a new kind of social network that provides you with opportunities to make friends through shared AR experiences.",
+        "primarycontactemail": "elena@togethar.io",
+        "websiteurl": "www.togethar.io"
+    },
+    {
+        "companyname": "Cabinet (Bloo)",
+        "logourl": "https://drive.google.com/file/d/18uxxQ4pbfFGSbmRpWLMnhwaQm06-lwEi/view?usp=sharing",
+        "shortdescription": "Cabinet is a trusted online community for assistants to share best practices and helpful tips across firms, industries and locations.",
+        "primarycontactemail": "julia@joincabinet.com",
+        "websiteurl": "www.joincabinet.com"
+    },
+    {
+        "companyname": "InMotion Systems",
+        "logourl": "N/A (in progress)",
+        "shortdescription": "InMotion Systems is creating real life remote control cars to empower \"driverless\" experiences",
+        "primarycontactemail": "jwd94@cornell.edu",
+        "websiteurl": "N/A"
+    },
+    {
+        "companyname": "Ex:"
+    },
+    {
+        "companyname": "Splook App",
+        "logourl": "https://i.imgur.com/6tGf1yG.png",
+        "shortdescription": "Splook is an Android app that allows you to share pop-up experiences with your friends!",
+        "primarycontactemail": "cf457@cornell.edu",
+        "websiteurl": "www.splookapp.com"
+    }
+]
