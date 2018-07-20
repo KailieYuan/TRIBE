@@ -227,7 +227,7 @@ Side Navegarion */
 /* First Menu Bat */
 	.menubar{
 	
-		width: 100%
+		width: 100%;
 		height: 50px;
 		margin-left: 0;
 		margin-top: -50px;
@@ -243,7 +243,7 @@ Side Navegarion */
 		top: 50px;
 		width: 100%;
 		background-color: black;
-		width: 100%
+		width: 100%;
 		height: 50px;
 		transition: opacity 1s;
 		webkit-transition:opacity 1s;
@@ -471,7 +471,7 @@ Side Navegarion */
 
 	footer{
 		opacity: 0.9;
-		width: 100%
+		width: 100%;
 		height: 15vh;
 		bottom: 0;
 		position: relative;

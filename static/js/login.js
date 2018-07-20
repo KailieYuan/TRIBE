@@ -1,6 +1,5 @@
 
-var attempt = 3; // Variable to count number of attempts.
-// Below function Executes on click of login button.
+
 function validate() {
     var email = document.getElementById("uLogin").value;
     var password = document.getElementById("uPassword").value;
@@ -9,19 +8,20 @@ function validate() {
 }
 
 
-function User(name, email, password, type){
+function User(name, email, password, type, loggedIn){
 
     this.name = name;
     this.password = password;
     this.email = email;
     this.type = type;
+    this.loggedIn = loggedIn;
 }
-var arr = [];
-function getValidUsers() {
 
-    var a = new User('Abby', 'abby@gmail.com', 'adminpw', 'admin');
-    var b = new User('Bob', 'bob@gmail.com', 'managerpw', 'manager');
-    var c = new User('Charlie', 'charlie@gmail.com', 'founderpw', 'founder');
+function getValidUsers() {
+    var arr = [];
+    var a = new User('Abby', 'abby@gmail.com', 'adminpw', 'admin', false);
+    var b = new User('Bob', 'bob@gmail.com', 'managerpw', 'manager', false);
+    var c = new User('Charlie', 'charlie@gmail.com', 'founderpw', 'founder', false);
 
     arr.push(a);
     arr.push(b);
@@ -29,15 +29,28 @@ function getValidUsers() {
     return arr;
 }
 
+var pos;
+var validUsers = getValidUsers();
 function isValidUser(uEmail, uPassword){
-    var validUsers = getValidUsers();
     var valid = false;
     for(var i = 0; i < validUsers.length; i++){
-        if(validUsers[i].email == uEmail && validUsers[i].password == uPassword)
+        if(validUsers[i].email == uEmail && validUsers[i].password == uPassword) {
             valid = true;
+            validUsers[i].loggedIn = true;
+            pos = i;
+        }
     }
-    if(valid)
-        window.location = "home.html";
+    if(valid){
+        alert("Logged in status: " + validUsers[pos].loggedIn + "Pos:" + pos);
+
+        if(validUsers[pos].type == "admin")
+            window.location = "admin.html";
+        else if(validUsers[pos].type == "manager")
+            window.location = "manager.html"
+        else
+            window.location = "founder.html"
+    }
+
     else
         alert("Your email and/or password is incorrect!");
 }
