@@ -21,9 +21,11 @@
 
 </head>
 
-<body>
 
-    <div id="mySideNav" class="sideNav">
+<body>
+<h1>WELCOME CHARLIE!!!!</h1>
+
+<div id="mySideNav" class="sideNav">
         <a id="closeIcon" href="javascript:void(0)" onclick="closeNav()">&times;</a>
 
         <a href="#home"><img style="height: 70px; margin: 20px;" src="static/images/smallLogoVertical.png"></a>
@@ -36,10 +38,7 @@
         </button>
 
     </div>
-
-    <button style="background-color:transparent;     border-color: #56467a;color: #56467a; position:absolute; margin: 10px; right: 0; z-index: 30;" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-        Sign in
-    </button>
+    <input type="button" value="Logout" id="logout" style="background-color:transparent;     border-color: #56467a;color: #56467a; position:absolute; margin: 10px; right: 0; z-index: 30;" class="btn btn-primary" data-toggle="modal" data-target="#myModal"onclick="location.href= 'file:///home/kailie/TRIBE/index.html'"/>
 
     <!-- images -->
 
@@ -55,7 +54,7 @@
 
             <p class="introtext">A companion and information tool for Runway Startup Postdoc & Spinout Programs @ Cornell Tech</p>
 
-            <button class="contact-us" onclick="location.href='mailto:runway@jacobs.cornell.edu';">Contact Us</button>
+            <button class="contact-us">Contact Us</button>
 
         </div>
 
@@ -352,8 +351,7 @@
         </div>
     </div>
 
-    <!-- 	JS Links -->
-
+ <!-- 	JS Links -->
     <script src="static/js/login.js"></script>
     <script type="text/javascript" src="static/js/jquery-min.js"></script>
     <script type="text/javascript" src="static/js/main.js"></script>
@@ -362,7 +360,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
-    </div>
-</body>
 
+</body>
 </html>
