@@ -17,7 +17,6 @@
 
     <!-- The top of the page -- logo, name, description, email and site -->
 
-
     <input id="generalInfoButton" type="button" value="Edit" onclick="changeGeneralEditable()"/>
 
     <div id="generalInfo">
@@ -32,18 +31,18 @@
     <div id="progress">
         <h2> Progress:</h2>
         <h3 id="currentStatus">Here is the elements original content</h3>
-        <h3 id="currentAccelrator">Here is the elements original content</h3>
-        <h3 id="currentAgreemnets">Here is the elements original content</h3>
+        <h3 id="currentAccelerators">Here is the elements original content</h3>
+        <h3 id="currentAgreements">Here is the elements original content</h3>
         <h3 id="currentPatents">Here is the elements original content</h3>
         <h3 id="currentApplications">Here is the elements original content</h3>
-        <h3 id="currentPartnership">Here is the elements original content</h3>
+        <h3 id="currentPartnerships">Here is the elements original content</h3>
     </div>
 
 
 
     <!-- Edit General Information -->
     <div id="modifyGeneralInfo">
-        <h2>General Infomration</h2>
+        <h2>General Information</h2>
         <span>Company Name:</span>
         <div id="name">
             Here is the elements original content
@@ -65,7 +64,7 @@
         </div>
 		<br><br>
 
-        <input type="button" value="save my edits" onclick="saveGeneralEdits()"/>
+        <input type="button" value="Save General Edits" onclick="saveGeneralEdits()"/>
     </div>
 
 
@@ -78,43 +77,41 @@
         </div>
 		<br><br>
         <span>Accelerator:</span>
-        <div id="accelerator">
-            Here is the elements original content
-            <input type="button" value="Add" onclick="addAccelerator()"/>
-            <input type="button" value="Edit" onclick="editAccelerator()"/>
+        <input type="button" value="+" onclick="addAccelerator()"/>
+        <input type="button" value="Edit" onclick="removeAccelerator()"/>
+        <div id="accelerators">
+           Here is the elements original content
+            <br>
+
         </div>
 		<br><br>
         <span>Licence Agreements:</span>
+        <input type="button" value="+" onclick="addAgreement()"/>
         <div id="agreements">
             Here is the elements original content
-            <input type="button" value="Add" onclick="addAgreement()"/>
-            <input type="button" value="Edit" onclick="editAgreement()"/>
         </div>
-
-		<br><br>
+        <br><br>
         <span>Patents:</span>
+        <input type="button" value="+" onclick="addPatent()"/>
         <div id="patents">
             Here is the elements original content
-            <input type="button" value="Add" onclick="addPatent()"/>
-            <input type="button" value="Edit" onclick="editPatent()"/>
+            This is the status
         </div>
-		<br><br>
+        <br><br>
         <span>Funding Applications:</span>
+        <input type="button" value="+" onclick="addApplication()"/>
         <div id="applications">
             Here is the elements original content
-            <input type="button" value="Add" onclick="addApplication()"/>
-            <input type="button" value="Edit" onclick="editApplication()"/>
         </div>
 		<br><br>
         <span>Partnerships:</span>
+        <input type="button" value="+" onclick="addPartnership()"/>
         <div id="partnerships">
             Here is the elements original content
-            <input type="button" value="Add" onclick="addPartnership()"/>
-            <input type="button" value="Edit" onclick="editPartnership()"/>
         </div>
 		<br><br>
 
-        <input type="button" value="save my edits" onclick="saveProgressEdits()"/>
+        <input type="button" value="Save Progress Edits" onclick="saveProgressEdits()"/>
     </div>
 
     <script src="static/js/founder.js"></script>
