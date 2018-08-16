@@ -1,0 +1,395 @@
+[
+    {
+      "id": 1,
+      "name": "Full Plate",
+      "profile-pic": "static/startupsLogos/fullplate.png",
+      "project": {
+        "title": "Full Plate",
+        "startup-type": "spinout",
+        "contactemail": "ryan@fullplate.nyc",
+        "websiteurl": "fullplate.nyc",
+        "company-category": "BtoC",
+        "image": "static/startupsLogos/fullplate.png",
+        "color": "red",
+        "description": "Full Plate improves health outcomes of low-income families by creating access to nutritious, affordable, and ready-to-eat meals."
+      }
+    },
+    {
+      "id": 2,
+      "name": "Crater",
+      "profile-pic": "static/startupsLogos/crater.png",
+      "project": {
+        "title": "Crater",
+        "startup-type": "spinout",
+        "contactemail": "arpit@crater.land",
+        "websiteurl": "crater.land",
+        "company-category": "AI, Media",
+        "image": "static/startupsLogos/crater.png",
+        "description": "Crater is redefining local media and storytelling for a new generation of creators. Armed with creative AI video-editing tools and guided storytelling templates, we give creators the courage to surface and share stories about their locality with their own self-produced segments. Through a quality, narrative-driven mobile video format, Crater stories converge on news and culture, covering what's most important to the unique identities of our home communities."
+      }
+    },
+    {
+      "id": 3,
+      "name": "Kipit",
+      "profile-pic": "static/startupsLogos/kipit.png",
+      "project": {
+        "title": "Kipit",
+        "startup-type": "spinout",
+        "contactemail": "eliza@kipit.tech",
+        "websiteurl": "kipit.tech",
+        "company-category": "BtoC",
+        "image": "static/startupsLogos/kipit.png",
+        "description": "Kipit is building a solution for busy people to keep track of their important items by sending them reminders when they are about to leave anything behind."
+      }
+    },
+    {
+      "id": 4,
+      "name": "LitOS",
+      "profile-pic": "static/startupsLogos/litos.png",
+      "project": {
+        "title": "LitOS",
+        "startup-type": "spinout",
+        "contactemail": "",
+        "websiteurl": "litos.in",
+        "company-category": "BtoC",
+        "image": "static/startupsLogos/litos.png",
+        "description": "litOS is a text-free, image-based and voice assisted custom Android operating system for low literate users around the world."
+      }
+    },
+    {
+      "id": 5,
+      "name": "Airbud",
+      "profile-pic": "static/startupsLogos/airbud.png",
+      "project": {
+        "title": "Airbud",
+        "startup-type": "spinout",
+        "contactemail": "israel@airbud.io",
+        "websiteurl": "irbud.io",
+        "company-category": "BtoC, AI, Media",
+        "image": "static/startupsLogos/airbud.png",
+        "description": "Airbud is a voice platform that allows enterprises to easily add voice capabilities to their websites and mobile apps. We use natural language understanding to let people have two-way conversations that simplify their access to relevant information. Starting with healthcare, we enable organizations to better engage with their existing customers and reduce the cost of customer support."
+      }
+    },
+    {
+      "id": 6,
+      "name": "Revercare",
+      "profile-pic": "static/startupsLogos/rc.png",
+      "project": {
+        "title": "Revercare",
+        "startup-type": "spinout",
+        "contactemail": "kiyan@revercare.com",
+        "websiteurl": "revercare.com",
+        "company-category": "HealthTech",
+        "image": "static/startupsLogos/rc.png",
+        "description": "ReverCare connects people caring for elderly family members to care coaches who help them craft a personalized, long-term care plan."
+      }
+    },
+    {
+      "id": 7,
+      "name": "TogethAR",
+      "profile-pic": "static/startupsLogos/togethar.png",
+      "project": {
+        "title": "TogethAR",
+        "startup-type": "spinout",
+        "contactemail": "elena@togethar.io",
+        "websiteurl": "togethar.io",
+        "company-category": "AI, Media",
+        "image": "static/startupsLogos/togethar.png",
+        "description": "TogethAR is a new kind of social network that provides you with opportunities to make friends through shared AR experiences."
+      }
+    },
+    {
+      "id": 8,
+      "name": "Cabinet (Bloo)",
+      "profile-pic": "static/startupsLogos/cabinet.png",
+      "project": {
+        "title": "Cabinet (Bloo)",
+        "startup-type": "spinout",
+        "contactemail": "julia@joincabinet.com",
+        "websiteurl": "joincabinet.com",
+        "company-category": "BtoC, Media",
+        "image": "static/startupsLogos/cabinet.png",
+        "description": "Cabinet is a trusted online community for assistants to share best practices and helpful tips across firms, industries and locations."
+      }
+    },
+    {
+      "id": 9,
+      "name": "Ironstack",
+      "profile-pic": "static/startupsLogos/ironstack.png",
+      "project": {
+        "title": "Ironstack",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "www.ironstack.com",
+        "company-category": "AI",
+        "image": "static/startupsLogos/ironstack.png",
+        "description": "Ironstack network operating system vastly simplifies the network management experience by being intuitive, fast and easy to use. Our solution works with both modern software-defined network equipment as well as older, traditional network switches."
+      }
+    },
+    {
+      "id": 10,
+      "name": "OnSIteIQ",
+      "profile-pic": "static/startupsLogos/onsiteiq.png",
+      "project": {
+        "title": "OnSIteIQ",
+        "startup-type": "runway",
+        "contactemail": "ardalan@onsiteiq.io",
+        "websiteurl": "http://onsiteiq.io/",
+        "company-category": "AI",
+        "image": "static/startupsLogos/onsiteiq.png",
+        "description": "OnSiteIQ is a progress documentation and safety analytics platform for construction projects. It provides a seamless interface for remotely monitoring construction activities, safety, and quality control."
+      }
+    },
+    {
+      "id": 11,
+      "name": "Biotia",
+      "profile-pic": "static/startupsLogos/biotia.png",
+      "project": {
+        "title": "Biotia",
+        "startup-type": "runway",
+        "contactemail": "ohara@biotia.io",
+        "websiteurl": "http://www.biotia.io",
+        "company-category": "HealthTech",
+        "image": "static/startupsLogos/biotia.png",
+        "description": "Biotia works with hospitals to combat the problems of hospital acquired infections (HAIs) and antibiotic resistance. Taking advantage of the current revolution in DNA sequencing, Biotia is building active surveillance systems to alert hospitals to pathogens and antibiotic resistance in their high risk environments to facilitating intervention before patients get sick."
+      }
+    },
+    {
+      "id": 12,
+      "name": "Concertio",
+      "profile-pic": "static/startupsLogos/concertio.png",
+      "project": {
+        "title": "Concertio",
+        "startup-type": "runway",
+        "contactemail": "tomer.morad@conretio.com",
+        "websiteurl": "https://concertio.com",
+        "company-category": "",
+        "image": "static/startupsLogos/concertio.png",
+        "description": "Concertio is a premier provider of AI-Powered System Performance Optimization Tools. The patent-pending Concertio Optimizer suite of tools optimizes hardware and software systems to work in concert with the currently running workloads. By continuously monitoring and dynamically optimizing system settings, Concertio Optimizer tools effectively transform general-purpose systems into high-performant, tailor-made systems."
+      }
+    },
+    {
+      "id": 13,
+      "name": "Maalka",
+      "profile-pic": "static/startupsLogos/maalka.png",
+      "project": {
+        "title": "Maalka",
+        "startup-type": "runway",
+        "contactemail": "info@maalka.com",
+        "websiteurl": "https://www.maalka.com/",
+        "company-category": "AI, Retail",
+        "image": "static/startupsLogos/maalka.png",
+        "description": "Maalka combines powerful data visualization and analytics with a collaborative user experience. Maalka is redefining how large building portfolios are managed. Whether you are a city or a corporate property holder, Maalka provides a scalable and flexible solution that removes the barriers associated with big data to enable continuous, iterative improvement."
+      }
+    },
+    {
+      "id": 14,
+      "name": "Code Ocean",
+      "profile-pic": "static/startupsLogos/codeocean.png",
+      "project": {
+        "title": "Code Ocean",
+        "startup-type": "runway",
+        "contactemail": "contact@codeocean.com",
+        "websiteurl": "https://codeocean.com/",
+        "company-category": "AI, BtoC",
+        "image": "static/startupsLogos/codeocean.png",
+        "description": "Code Ocean is making the world’s algorithmic and scientific software knowledge accessible and executable. It is a cloud based platform which enables researchers in academia and industry software engineers to discover and run algorithms published in scientific journals with a single click."
+      }
+    },
+    {
+      "id": 15,
+      "name": "PeachyLabs",
+      "profile-pic": "static/startupsLogos/peachylabs.png",
+      "project": {
+        "title": "PeachyLabs",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "peachylabs.com",
+        "company-category": "",
+        "image": "static/startupsLogos/peachylabs.png",
+        "description": "PeachyLabs is building a computer vision system that can fully describe the food in an image, including ingredients, dish name, nutritional data, cuisine and flavor profile. This service has applications for, among others, app developers and manufacturers of self-checkout lines."
+      }
+    },
+    {
+      "id": 16,
+      "name": "City Hive",
+      "profile-pic": "static/startupsLogos/cityhive.png",
+      "project": {
+        "title": "City Hive",
+        "startup-type": "runway",
+        "contactemail": "contact@cityhive.net",
+        "websiteurl": "https://www.cityhive.net/",
+        "company-category": "Retail",
+        "image": "static/startupsLogos/cityhive.png",
+        "description": "City Hive has built the software engine of the on-demand economy. City Hive is a true enabler of efficient e-commerce for the benefit of producers, merchants, and consumers alike. City Hive’s solution, already deployed with multiple customers, allows buy buttons and call for actions to seamlessly appear at multiple locations across the world wide web. Users can easily create random product and merchant aggregations in and outside of content opening the door to a new wave of e-commerce that is both global and local at the same time."
+      }
+    },
+    {
+      "id": 17,
+      "name": "Nanit",
+      "profile-pic": "static/startupsLogos/nanit.png",
+      "project": {
+        "title": "Nanit",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "https://www.nanit.com/",
+        "company-category": "AI, BtoC",
+        "image": "static/startupsLogos/nanit.png",
+        "description": "Nanit is revolutionizing the way babies sleep with machine learning algorithms and advanced computer vision technology. Nanit aims to put the power of technology in the hands of parents everywhere. The team at Nanit is comprised of moms, dads and sleep fans."
+      }
+    },
+    {
+      "id": 18,
+      "name": "SHADE",
+      "profile-pic": "static/startupsLogos/shade.png",
+      "project": {
+        "title": "SHADE",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "https://www.wearshade.com/",
+        "company-category": "HealthTech",
+        "image": "static/startupsLogos/shade.png",
+        "description": "Shade has developed the first wearable technology to measure accurately solar ultraviolet (UV) radiation. Shade connects to the smartphone via Bluetooth, enabling lupus patients to discover and manage their personal tolerance to UV exposure directly on their smartphones. Lupus is a severe disease for which UV exposure has an immediate, debilitating, and life-threatening impact. Shade has gained significant traction in the lupus community with endorsement by key opinion leaders and influencers. The Shade team is comprised of scientists and engineers with a deep expertise in semiconductors, artificial intelligence, manufacturing, and epidemiology, and is backed by a strong medical advisory board."
+      }
+    },
+    {
+      "id": 19,
+      "name": "Paragon Measure",
+      "profile-pic": "static/startupsLogos/paragonmeasure.png",
+      "project": {
+        "title": "Paragon Measure",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "",
+        "company-category": "",
+        "image": "static/startupsLogos/paragonmeasure.png",
+        "description": "Paragon Measure helps patients with motor-related diseases, like Parkinson’s, Arthritis and Multiple Sclerosis. When these patients use their mobile devices, their typing patterns are tracked, detecting long-term changes and delivering data to researchers testing drug therapies and clinicians tailoring treatment plans."
+      }
+    },
+    {
+      "id": 20,
+      "name": "Innovatively",
+      "profile-pic": "static/startupsLogos/innovatively.png",
+      "project": {
+        "title": "Innovatively",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "https://www.getinnovatively.com/",
+        "company-category": "HealthTech",
+        "image": "static/startupsLogos/innovatively.png",
+        "description": "Innovatively makes sense of public data to deliver comprehensive information on markets, companies and products in the healthcare and life sciences industries."
+      }
+    },
+    {
+      "id": 21,
+      "name": "Queue Al",
+      "profile-pic": "static/startupsLogos/queueai.png",
+      "project": {
+        "title": "Queue Al",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "",
+        "company-category": "AI",
+        "image": "static/startupsLogos/queueai.png",
+        "description": "Queue AI is building a digital personal assistant to help prioritize users’ tasks and manage schedules by knowing upcoming deadlines, breaking down larger projects and understanding users’ most productive hours."
+      }
+    },
+    {
+      "id": 22,
+      "name": "Spectrum",
+      "profile-pic": "static/startupsLogos/spectrum.png",
+      "project": {
+        "title": "Spectrum",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "http://www.builtspectrum.com/",
+        "company-category": "",
+        "image": "static/startupsLogos/spectrum.png",
+        "description": "Spectrum is a software platform delivering real-time building performance feedback. The company leverages cloud computations, machine learning and green design principles to help architects more intelligently make sustainable design decisions during the earliest design stages. The initial product plugs into the building information modeling programs Rhino, Revit, and Sketchup and provides life cycle assessment feedback on energy use, costs and environmental impact. Architects’ design cycle times are shortened, high performance design options are enhanced by a factor of 20,000, life cycle impacts are significantly reduced and sustainability goals are more easily met."
+      }
+    },
+    {
+      "id": 23,
+      "name": "The Data Incubator",
+      "profile-pic": "static/startupsLogos/thedataincubator.png",
+      "project": {
+        "title": "The Data Incubator",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "https://www.thedataincubator.com/",
+        "company-category": "AI, BtoC",
+        "image": "static/startupsLogos/thedataincubator.png",
+        "description": "The Data Incubator, is a data science education company based in NYC, DC, and SF with both corporate training as well as recruiting services. For corporate training, it offers customized, in-house training solutions in data and analytics. For data science hiring, it runs a free 8 week fellowship training PhDs to become data scientists."
+      }
+    },
+    {
+      "id": 24,
+      "name": "TATCH",
+      "profile-pic": "static/startupsLogos/tatch.png",
+      "project": {
+        "title": "TATCH",
+        "startup-type": "runway",
+        "contactemail": "amir@tatchhealth.com",
+        "websiteurl": "https://www.tatchhealth.com",
+        "company-category": "AI, HealthTech",
+        "image": "static/startupsLogos/tatch.png",
+        "description": "Tatch transforms the cumbersome sleep-labs into smart wireless patches at home. It creates a first-of-its-kind solution that combines advances in printed electronics and machine learning to make sleep medicine more seamless and accurate than ever before"
+      }
+    },
+    {
+      "id": 25,
+      "name": "kee.sh",
+      "profile-pic": "static/startupsLogos/keesh.png",
+      "project": {
+        "title": "kee.sh",
+        "startup-type": "runway",
+        "contactemail": "info@kee.sh",
+        "websiteurl": "https://kee.sh",
+        "company-category": "AI",
+        "image": "static/startupsLogos/keesh.png",
+        "description": "kee.sh is a cloud-native secrets management service, helping companies to automate and integrate secrets into their development pipelines. From encryption keys to database passwords, secrets are a fundamental ingredient of many applications. We take a developer centric focus, and provide the tools necessary to provision, distribute, and audit secrets, with no need for running additional infrastructure."
+      }
+    },
+    {
+      "id": 26,
+      "name": "EINO",
+      "profile-pic": "static/startupsLogos/eino.png",
+      "project": {
+        "title": "EINO",
+        "startup-type": "runway",
+        "contactemail": "samadi@eino.ai",
+        "websiteurl": "https://eino.ai",
+        "company-category": "AI",
+        "image": "static/startupsLogos/eino.png",
+        "description": "EINO boosts mobile network performance with future information of capacity demand and proactive optimization actions. EINO’s proprietary technology uses the power of Big Data and AI to provide predictive contextual intelligence on mass human movement/activity and network optimization techniques."
+      }
+    },
+    {
+      "id": 27,
+      "name": "F!ND Genomics",
+      "profile-pic": "static/startupsLogos/findgenomics.png",
+      "project": {
+        "title": "F!ND Genomics",
+        "startup-type": "runway",
+        "contactemail": "",
+        "websiteurl": "www.findgenomics.ai",
+        "company-category": "HealthTech",
+        "image": "static/startupsLogos/findgenomics.png",
+        "description": "F!ND genomics maximizes the power of DNA to support intelligence, homeland defense, disaster victim identification, patient sample tracking and cell line authentication in research laboratories. We provide tools for rapid, on-site DNA analysis within minutes."
+      }
+    },
+    {
+      "id": 28,
+      "name": "OneThree Biotech",
+      "profile-pic": "static/startupsLogos/onethree.png",
+      "project": {
+        "title": "OneThree Biotech",
+        "startup-type": "runway",
+        "contactemail": "nsm76@cornell.edu",
+        "websiteurl": "",
+        "company-category": "HealthTech",
+        "image": "static/startupsLogos/onethree.png",
+        "description": "OneThree Biotech is a New York based startup that uses AI to accelerate drug development. Our proprietary platform integrates multiple data types to predict binding targets, biomarkers, and clinical effects. This allows researchers to focus their experiments and develop better medicines, faster."
+      }
+    }
+  ]

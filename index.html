@@ -1,32 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-    <link rel="shortcut icon" href="static/images/favicon.ico">
+<!-- cat -->
+<!-- btoc -->
 
-    <title>TRIBE</title>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="static/css/normalize.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
+<head lang="en">
+	<link rel="shortcut icon" href="static/images/favicon.ico">
 
-    <!-- 	<link rel="stylesheet" href="static/css/normalize.min.css">
-	<link rel="stylesheet" href="static/css/style.css"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<title>TRIBE</title>
+	<link href="static/css/styles.css?version=51" rel="stylesheet">
+	 <link rel="stylesheet" href="static/css/normalize.min.css?version=51">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
+	<div class="main-content">
+
+
+<!-- -----------------------------------------------
+    Navigation close
+-----------------------------------------------   --> 
+
+
+    <div class="company-profile" id="company"></div>
 
     <div id="mySideNav" class="sideNav">
         <a id="closeIcon" href="javascript:void(0)" onclick="closeNav()">&times;</a>
 
-        <a href="#home"><img style="height: 70px; margin: 20px;" src="static/images/smallLogoVertical.png"></a>
+        <a href=""><img style="height: 70px; margin: 20px;" src="static/images/smallLogoVertical.png"></a>
 
         <div style="width: 100%; height: 1px; background: transparent;"></div>
 
@@ -37,19 +47,23 @@
 
     </div>
 
-    <button style="background-color:transparent;     border-color: #56467a;color: #56467a; position:absolute; margin: 10px; right: 0; z-index: 30;" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    <button id="signBotton" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
         Sign in
     </button>
 
-    <!-- images -->
-
-    <div class="top-banner" id="home">
+<!-- -----------------------------------------------
+    Header Section
+-----------------------------------------------   -->  
+	<div class="top-banner" id="home">
 
         <div class="ham-container">
             <a class="hamberguer" style="font-size: 30px; color:#56467a; cursor: pointer;" onclick="openNav()">&#9776;</a>
         </div>
 
-        <div style="position: absolute; width: 100%; text-align: center;">
+        <img style="opacity: 0.7;"  class="banner-background" src="static/images/tribe-back.png">
+        <div style="background-color: #F3F3F3; z-index: -200;" class="banner-background"></div>
+
+        <div style="width: 100%; text-align: center;">
 
             <img class="logo-landing" src="static/images/tribe.png">
 
@@ -59,11 +73,32 @@
 
         </div>
 
-        <img class="banner-background" src="static/images/tribe-back.png">
+        
     </div>
 
-    <!-- This is the pop up window for signing in -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div style="background-color: #3EB2A0; width: 100%" class="top-banner" id="home">
+        <div class="statistics">
+            <h1>45</h1>
+            <p>Companies Created</p>
+        </div>
+        <div class="statistics">
+            <h1>$32M</h1>
+            <p>Raised in Private Investment</p>
+        </div>
+        <div class="statistics">
+            <h1>173</h1>
+            <p>High-Tech Jobs Created</p>
+        </div>
+    </div>
+
+    
+
+
+<!-------------------------------------------------
+ This is the pop up window for signing in 
+--------------------------------------------------->
+
+    <div style="background-color: rgba(0,0,0,0.7);" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -75,105 +110,48 @@
                 </div>
 
                 <div class="modal-body">
-                  <!--  <form role="form" method="post">
-                        <div class="form-group" style="width: 100%;">
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="uLogin" name="uLogin" placeholder="User Name">
-                                <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
-                            </div>
-                        </div>
-
-                        <div class="form-group" style="width: 100%;">
-                            <div class="input-group">
-                                <input type="password" class="form-control" id="uPassword" name="uPassword" placeholder="Password">
-                                <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
-                            </div>
-                        </div>
-
-                        <div style="margin-left: 70%;" class="checkbox">
-                            <label>
-                                <input type="checkbox"> Remember me
-                            </label>
-                        </div>
-
-                        <div class="modal-footer">
-                            <input class="form-control btn btn-primary" style="background-color: #3eb2a0;border-color: #3eb2a0;" type="button" id="submit" value="Sign In" onclick="validate()" />
-                        </div>
-                    </form>
-                </div>-->
-                    <form id="form_id" method="post" name="myform">
-                        <label>User Name :</label>
-                        <input type="text" name="uLogin" id="uLogin"/><br>
-                        <label>Password :</label>
-                        <input type="password" name="uPassword" id="uPassword"/><br>
-                        <input type="button" value="Login" id="submit" onclick="validate()"/>
+                    <form style="width: 100%; text-align: center;" id="form_id" method="post" name="myform">
+                        <!-- <label>User Name :</label> -->
+                        <input style="width: 100%; margin-top: 20px;" placeholder="User Name" type="text" name="uLogin" id="uLogin"/><br>
+                        <!-- <label>Password :</label> -->
+                        <input style="width: 100%; margin-top: 20px;" placeholder="Password" type="password" name="uPassword" id="uPassword"/><br>
+                        <input style="width: 50%; margin: 20px; background-color:#56467a;border-color: #56467a; color: white; border-radius: 20px;" type="button" value="Login" id="submit" onclick="validate()"/>
                     </form>
               </div>
             </div>
         </div>
     </div>
 
-    <!-- This is the landing Page -->
+
+
+
+<!-----------------------------------------------
+ This is the Sticky Menu 
+------------------------------------------------>
 
     <div class="menubar">
 
         <nav>
-            <a href="#home"><img style="position: absolute; left: 25px; height: 27px;" src="static/images/smallLogo.png"></a>
+            <a href=""><img style="position: absolute; left: 25px; height: 27px;" src="static/images/smallLogo.png"></a>
             <button style="background-color:transparent; border-color: #62C4B2;color: #62C4B2; position:absolute; margin-right: 10px;
 		 	 margin-top: -5px; right: 0;" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                 Sign in
             </button>
 
-            <li><a class="submenu link1" href="#news" tabindex="1">NEWS</a></li>
-            <li><a class="submenu link2" href="#runway" tabindex="1">RUNWAY</a></li>
-            <li><a class="submenu link3" href="#spinouts" tabindex="1">SPINOUTS</a></li>
+            <li><span class="submenu link1" tabindex="1">NEWS</span></li>
+            <li><span class="submenu link2" tabindex="1">RUNWAY</span></li>
+            <li><span class="submenu link3" tabindex="1">SPINOUTS</span></li>
         </nav>
 
-        <div class="filtermenu">
-
-            <div class="wrap">
-                <div class="search">
-                    <input type="text" class="searchTerm" placeholder="Search">
-                    <button type="submit" class="searchButton">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div>
-
-            <form class="filter-container filterLarge">
-                <div>
-                    <input id="checkbox-1" class="checkbox-custom1 allboxes" name="checkbox-1" type="checkbox" checked>
-                    <label for="checkbox-1" class="checkbox-custom-label1 alllables">Filter A</label>
-                </div>
-
-                <div>
-                    <input id="checkbox-2" class="checkbox-custom2 allboxes" name="checkbox-2" type="checkbox" checked>
-                    <label for="checkbox-2" class="checkbox-custom-label2 alllables">Filter B</label>
-                </div>
-
-                <div>
-                    <input id="checkbox-3" class="checkbox-custom3 allboxes" name="checkbox-3" type="checkbox" checked>
-                    <label for="checkbox-3" class="checkbox-custom-label3 alllables">Filter B</label>
-                </div>
-
-                <div>
-                    <input id="checkbox-4" class="checkbox-custom4 allboxes" name="checkbox-4" type="checkbox" checked>
-                    <label for="checkbox-4" class="checkbox-custom-label4 alllables">Filter D</label>
-                </div>
-
-            </form>
-
-            <div>
-                <button type="filter" class="filterButton">
-                    <i class="fa fa-filter"></i>
-                </button>
-            </div>
-
-        </div>
+        
 
     </div>
 
-    <div style="background-color: transparent; height: auto;" id="news" class="news page">
+
+<!-----------------------------------------------
+ News Section
+------------------------------------------------>
+<div style="background-color: transparent; height: auto;" id="news" class="news page">
         <div class="news-container">
 
             <!--Carousel Wrapper-->
@@ -196,7 +174,9 @@
                         <div style="display: inline-flex;" class="col-md-5 mb-5">
                             <div class="card">
                                 <img style="width: 100%;display: block;
-	    			margin: auto;" class="img-fluid" src="static/news/news1.png">
+	    			margin: auto;" class="img-fluid" src="static/news/news2.jpg">
+
+                    <p>Recently completed your PhD and want to harness your deep tech expertise to start a company?<br><a href="https://tech.cornell.edu/programs/startup-postdocs/" target="_blank"><span>Read More</span></a></p> 
 
                             </div>
                         </div>
@@ -204,7 +184,9 @@
                         <div style="display: inline-flex;" class="col-md-5 mb-5">
                             <div class="card">
                                 <img style="width: 100%;display: block;
-	    			margin: auto;" class="img-fluid" src="static/news/news2.jpg">
+	    			margin: auto;" class="img-fluid" src="static/news/news1.png">
+
+                    <p>How Runway Startup Program Teaches Entrepreneurs to Uncover Different Market Opportunities<br><a href="https://tech.cornell.edu/news/how-runway-startup-program-teaches-entrepreneurs-to-uncover-different-marke/" target="_blank"><span>Read Story</span></a></p> 
                             </div>
                         </div>
 
@@ -219,6 +201,8 @@
                                 <img style="width: 100%;display: block;
 	    			margin: auto;" class="img-fluid" src="static/news/news3.png">
 
+                     <p>Could This Smart Patch Help People Finally Get a Good Night’s Sleep?<br><a href="https://tech.cornell.edu/news/could-this-smart-patch-help-people-finally-get-a-good-nights-sleep/" target="_blank"><span>Read Story</span></a></p>   
+
                             </div>
                         </div>
 
@@ -226,6 +210,9 @@
                             <div class="card">
                                 <img style="width: 100%;display: block;
 	    			margin: auto;" class="img-fluid" src="static/news/news4.png">
+
+                        <p>Nanit Secures $14 Million in Series B Funding<br><a href="https://tech.cornell.edu/news/nanit-secures-14-million-in-series-b-funding/" target="_blank"><span>Read Story</span></a></p>  
+
                             </div>
                         </div>
 
@@ -241,128 +228,145 @@
         </div>
     </div>
 
-    <div id="runway" class="runway page">
-        <div class="runway-container">
-            <div style="width: 95%; height: calc(0.1rem + 0.3vw); background-color: #56467a; margin-left:2.5%;"></div>
-            <h2 style=" color: #56467a; margin-top:10px;font-size: calc(0.7rem + 1vw);">RUNWAY</h2>
-            <!-- <div style="width: 95%; height: calc(0.1rem + 0.3vw); background-color: #56467a; margin-left:2.5%; margin-bottom: 15px;"></div> -->
 
-            <div class="startup">
-                <div class="filter_dot">
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                </div>
 
-                <div class="logo-cont"><img src="static/startupsLogos/crater-logo-full-horizontal-color.png">
-                </div>
-            </div>
 
-            <div class="startup">
-                <div class="filter_dot">
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                </div>
 
-                <div class="logo-cont"><img src="static/startupsLogos/crater-logo-full-horizontal-color.png">
-                </div>
-            </div>
-            <div class="startup">
-                <div class="filter_dot">
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                </div>
 
-                <div class="logo-cont"><img src="static/startupsLogos/crater-logo-full-horizontal-color.png">
+<!-- -----------------------------------------------
+    All Companies Section
+-----------------------------------------------   -->  
+
+
+		<div class="top-banner" id="runway">
+            <img class="banner-background" src="static/images/company-background.jpeg">
+
+            <div id="generalInfo" style="margin-bottom: 20px;">
+                <a href="https://tech.cornell.edu/programs/startup-postdocs/runway-application/" target="_blank">How To Apply</a>
+                <span style="margin-top: 30px; margin-bottom: 10px;font-size: calc(0.9rem + 1vw); display: block; color: white; text-align: left;">Runway</span>
+                <p class="sectiontext">The Runway Startup Postdoc Program is part business school, part research institution, and part startup incubator. Based at the Jacobs Technion-Cornell Institute, Runway ushers recent PhDs in digital technology fields through a paradigm shift — from an academic mindset to an entrepreneurial outlook.</p>
+        	</div>
+    	</div>
+
+		<div class="all-students page">
+			<div class="filters">
+
+				<div class="wrap">
+	                <div class="search">
+	                    <input type="text" class="searchTerm" placeholder="Search">
+	                    <button type="submit" class="searchButton">
+	                        <i class="fa fa-search"></i>
+	                    </button>
+	                </div>
+            	</div>
+
+			
+				<form>
+					<div class="filter-criteria">
+						<label class="label-container"><input type="checkbox" checked="checked" name="company-category" value="btoc"><span class="checkmark checkmark1"></span>B to C</label>
+						<label class="label-container"><input type="checkbox" checked="checked" name="company-category" value="ai"><span class="checkmark checkmark2"></span>AI</label>
+						<label class="label-container"><input type="checkbox" checked="checked" name="company-category" value="media"><span class="checkmark checkmark3"></span>Media</label>
+						<label class="label-container"><input type="checkbox" checked="checked" name="company-category" value="healthtech"><span class="checkmark checkmark4"></span>Health Tech</label>
+		
+					</div>
+
+
+					<button class="clear">Clear filters</button>
+				</form>
+			</div>
+
+			<ul class="students-list" id="filterstick">
+				<script id="students-template" type="x-handlebars-template">​
+					{{#each this}}
+						<li data-index="{{id}}">
+							<a href="#" class="student-photo"><img src="{{profile-pic}}" alt="{{name}}"/></a>
+							<h2><a href="#"> {{name}} </a><br/></h2>
+						</li>
+					{{/each}}
+				</script> 
+			</ul>
+
+			<div class="top-banner runways" id="spinouts">
+            <img class="banner-background" src="static/images/company-background.jpeg">
+
+            <div id="generalInfo" style="margin-bottom: 20px;">
+                    <a href="https://tech.cornell.edu/studio/" target="_blank">How To Apply</a>
+                    <span style="margin-top: 30px; margin-bottom: 10px;font-size: calc(0.9rem + 1vw); display: block; color: white; text-align: left;">Spinouts</span>
+                    <p class="sectiontext">To date, students have created 18 startup businesses that together employ 32 people. Many of those new businesses helped along by Cornell Tech’s Startup Awards, which provide funding and other support to student teams who want to spin out their Startup Studio projects after graduation.</p>
+
                 </div>
-            </div>
+    	</div>	
+
+    	<ul class="students-list" id="filterstick">
+				<script id="students-template" type="x-handlebars-template">​
+					{{#each this}}
+						<li data-index="{{id}}">
+							<a href="#" class="student-photo"><img src="{{profile-pic}}" alt="{{name}}"/></a>
+							<h2><a href="#"> {{name}} </a><br/></h2>
+						</li>
+					{{/each}}
+				</script> 
+			</ul>
+
+
+		</div>
+	
+
+
+		<div class="single-project page" style="z-index: 1000;">
+			<!-- <div class="overlay"></div> -->
+			<div class="popup-detail">
+				<!--these dummy contents are dynamically changed from script.js-->
+				<img src=""/>
+				<h3>Single project view</h3>
+				<h4>Blurb placeholder</h4>
+				<p id="emailcompany"></p>
+				<a id="webcompany"></a>
+				<span class="close">×</span>
+				<img style="opacity: 0.7;"  class="banner-background" src="static/images/tribe-back.png">
+        <div style="background-color: #F3F3F3; z-index: -200;" class="banner-background"></div>
+			</div>
+
+		</div>
+
+
+
+		<div class="error page">
+			<h3>Something went wrong and I'm not sure why.. :o</h3>
+		</div>
+
+	</div>
+
+
+<!-- -----------------------------------------------
+    Footer
+-----------------------------------------------   -->  
+
+    <footer>
+        <div>
+            <img src="static/images/ctfooter.png">
+
+            <img src="static/images/jacobslogo.png">
+
+            <img src="static/images/witnylogo.png">
         </div>
-    </div>
 
-    <div id="spinouts" class="spinouts page">
-        <div class="spinouts-container">
-            <div style="width: 95%; height: calc(0.1rem + 0.3vw); background-color: #3EB2A0; margin-left:2.5%;"></div>
-            <h2 style=" color: #3EB2A0; margin-top:10px;font-size: calc(0.7rem + 1vw);">SPINOUTS</h2>
+        <img class="footer-logo" src="static/images/TRIBEfooterlogo.png">
 
-            <div class="startup">
-                <div class="filter_dot">
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                </div>
+    </footer>
 
-                <div class="logo-cont"><img src="static/startupsLogos/crater.png">
-                </div>
-            </div>
 
-            <div class="startup">
-                <div class="filter_dot">
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                </div>
-
-                <div class="logo-cont"><img src="static/startupsLogos/fullplate.png">
-                </div>
-            </div>
-            <div class="startup">
-                <div class="filter_dot">
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                </div>
-
-                <div class="logo-cont"><img src="static/startupsLogos/kipit.png">
-                </div>
-            </div>
-
-            <div class="startup">
-                <div class="filter_dot">
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                </div>
-
-                <div class="logo-cont"><img src="static/startupsLogos/rc.png">
-                </div>
-            </div>
-
-            <div class="startup">
-                <div class="filter_dot">
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                </div>
-
-                <div class="logo-cont"><img src="static/startupsLogos/airbud.png">
-                </div>
-            </div>
-            <div class="startup">
-                <div class="filter_dot">
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                    <div class="filter_cat"></div>
-                </div>
-
-                <div class="logo-cont"><img src="static/startupsLogos/togrthar.png">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 	JS Links -->
-
-    <script src="static/js/login.js"></script>
     <script type="text/javascript" src="static/js/jquery-min.js"></script>
-    <script type="text/javascript" src="static/js/main.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<script src="static/js/script.js?version=51"></script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
-    </div>
-</body>
 
+</body>
 </html>

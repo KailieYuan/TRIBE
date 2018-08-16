@@ -7,13 +7,142 @@
 		top: 0;
 	}	
 
-/*nav*/
+/*contact-us*/
+/*logo-landing*/
+	.hide {
+            display: none;
+        }
 
 /*Hamberguer menu _ This is only visible on small displays*/
+
+	#modifyGeneralInfo{
+	width: 100%;
+	text-align: center;
+	align-content: center;
+	background-color: rgba(0,0,0,0.8);
+	height: 100vh;
+	position: fixed;
+	z-index: 100;
+}
+
+.modifications{
+	width: 60%;
+	margin-left: 20%;
+	background-color: white;
+	margin-top: 20px;
+	max-height: 95vh;
+	overflow-y: auto;
+
+}
+
+#generalInfoButton{
+	width: calc(1.2rem + 1vw);
+	height: calc(1.2rem + 1vw);
+	display: block;
+	width: 80%;
+	margin-left:10%; 
+}
+
+#generalInfoButton img{
+ 	position: absolute;
+ 	width: calc(1.2rem + 1vw);
+	height: calc(1.2rem + 1vw);
+	right: 15%;
+}
+
+
+.modification-fields{
+	width: 90%;
+	margin-left:5%;
+	text-align: left; 
+
+}
+
+.modification-fields span{
+	color: gray;
+	font-weight: lighter;
+	font-size:calc(0.5rem + 1vw);
+}
+
+.modification-fields div{
+	border: solid 1px lightgray;
+	padding: 5px;
+	font-size:calc(0.5rem + 1vw);
+}
+
+	.modifications-banner{
+		width: 100%;
+		height: auto;
+		position: relative;
+		object-fit: cover;
+		overflow: hidden;
+		margin-bottom: 20px;
+		z-index: 100;
+
+
+	}
+
+	.modifications-background{
+
+		min-width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		z-index: -1;
+	}
+
+	.logo-modifications{
+		width: 15%; 
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+
+	.head-modification{
+		width: 100%;
+		height: calc(1.7rem + 1vw);
+
+	}
+
+	.head-modification p{
+		padding-top: 5px;
+		font-size: calc(0.4rem + 1vw); 
+		text-align: left;
+		color: #56467A;
+		padding-left: 20px;
+	}
+
+	.save-modification{
+		background-color:#3EB2A0; 
+		border-color: #3EB2A0;
+		border-radius: 10px;
+		color: white;  
+		margin: 10px; 
+		z-index: 30;
+		width:30%
+	}
+
+
+
+	#closeModifications{
+		position: absolute;
+		color: #56467A;
+		right: 21%;
+		top: 15px;
+		z-index: 100;
+		font-size: calc(1rem + 1vw); 
+	}
+
+	#closeModifications:hover{
+
+		text-decoration: none;
+	}	
+
 	.ham-container{
-		position: fixed;
 		z-index: 90;
-		display: none;
 	}
 	
 	.hamberguer{
@@ -21,6 +150,9 @@
 		left: 30px;
 		position: absolute;		
 	}
+
+
+
 /*
 Side Navegarion */
 	#mySideNav{
@@ -86,17 +218,36 @@ Side Navegarion */
 
 /*Header Landing Page*/
 	.logo-landing{
-		width: 20%; 
+		width: 10%; 
+		height: 10%;
+		background-color: white;
 		margin-top: 30px;
 	}
 
-	.banner-background{
+	.top-banner{
 		width: 100%;
+		height: auto;
+		position: relative;
 		object-fit: cover;
-		max-height: 500px;
-		object-position:0 30%;
-		z-index: 1;
-		overflow-y: hidden;
+		overflow: hidden;
+
+
+	}
+
+	.banner-background{
+
+		min-width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		z-index: -100;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+/*		max-height: 500px;*/
+	/*	object-position:0 0;
+		
+		overflow: hidden;*/
 	}
 
 	#home{
@@ -118,24 +269,25 @@ Side Navegarion */
 		color: white;
 	}
 
-	.contact-us{
-		background-color:transparent; 
-		border-color: #56467a;
-		color: #56467a;  
+	#contact-us, #hide-contact{
+		background-color:#3EB2A0; 
+		border-color: #3EB2A0;
+		border-radius: 10px;
+		color: white;  
 		margin: 10px; 
 		z-index: 30;
+		width:70%;
 	}
 
 
 	.introtext{
 		font-size: calc(0.6rem + 1vw); 
-		width: 40%; 
+		width: 70%; 
 		text-align: 
-		center; margin-left: 30%; 
-		color: dimgray; 
-		margin-top: 30px;
+		center; margin-left: 15%; 
+		color: white; 
+		font-weight: lighter;
 	}
-
 
 /* news page */
 	.news{
@@ -227,7 +379,7 @@ Side Navegarion */
 /* First Menu Bat */
 	.menubar{
 	
-		width: 100%;
+		width: 100%
 		height: 50px;
 		margin-left: 0;
 		margin-top: -50px;
@@ -243,7 +395,7 @@ Side Navegarion */
 		top: 50px;
 		width: 100%;
 		background-color: black;
-		width: 100%;
+		width: 100%
 		height: 50px;
 		transition: opacity 1s;
 		webkit-transition:opacity 1s;
@@ -471,7 +623,7 @@ Side Navegarion */
 
 	footer{
 		opacity: 0.9;
-		width: 100%;
+		width: 100%
 		height: 15vh;
 		bottom: 0;
 		position: relative;
@@ -556,14 +708,37 @@ Side Navegarion */
 @media (max-width: 750px) {
 
 /*Show hamburguer menus in small displays and hide menu bar*/	
-	.ham-container{
-		display: inline-flex;
-	}
+
 
 	.menubar nav{
 		display: none;
 	}
 
 
+
 }
+
+
+
+
+
+/*---------------------------------------------------------*/
+/* Resources Page */
+/*---------------------------------------------------------*/
+#addName{
+	width: 100%;
+}
+
+.badge{
+	width: 80%;
+	margin-left:10%;
+	text-align: left; 
+}
+
+.badge p{
+	font-size:calc(0.4rem + 1vw);
+	max-width: 80vw;
+
+}
+
 
